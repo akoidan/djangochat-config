@@ -1,5 +1,6 @@
 
 .icon-snow-heavy-inv:before { content: '\e800'; } /* '' */
+.icon-chart-bar:before { content: '\e801'; } /* '' */
 .icon-emo-happy:before { content: '\e802'; } /* '' */
 .icon-anonymous:before { content: '\e803'; } /* '' */
 .icon-mic:before { content: '\e804'; } /* '' */
@@ -54,3 +55,6 @@
 .icon-emo-unhappy:before { content: '\e835'; } /* '' */
 .icon-emo-wink2:before { content: '\e836'; } /* '' */
 .icon-emo-wink:before { content: '\e837'; } /* '' */
+.icon-chart-area:before { content: '\e838'; } /* '' */
+.icon-chart-pie:before { content: '\e839'; } /* '' */
+.icon-chart-line:before { content: '\e83a'; } /* '' */
