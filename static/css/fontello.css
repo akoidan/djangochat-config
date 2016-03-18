@@ -1,10 +1,11 @@
 @font-face {
   font-family: 'fontello';
-  src: url('../font/fontello.eot?26813957');
-  src: url('../font/fontello.eot?26813957#iefix') format('embedded-opentype'),
-       url('../font/fontello.woff?26813957') format('woff'),
-       url('../font/fontello.ttf?26813957') format('truetype'),
-       url('../font/fontello.svg?26813957#fontello') format('svg');
+  src: url('../font/fontello.eot?47266258');
+  src: url('../font/fontello.eot?47266258#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff2?47266258') format('woff2'),
+       url('../font/fontello.woff?47266258') format('woff'),
+       url('../font/fontello.ttf?47266258') format('truetype'),
+       url('../font/fontello.svg?47266258#fontello') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -14,7 +15,7 @@
 @media screen and (-webkit-min-device-pixel-ratio:0) {
   @font-face {
     font-family: 'fontello';
-    src: url('../font/fontello.svg?26813957#fontello') format('svg');
+    src: url('../font/fontello.svg?47266258#fontello') format('svg');
   }
 }
 */
@@ -54,48 +55,51 @@
   /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
 }
  
-.icon-snow-heavy-inv:before { content: '\e800'; } /* '' */
-.icon-chart-bar:before { content: '\e801'; } /* '' */
-.icon-phone:before { content: '\e802'; } /* '' */
-.icon-anonymous:before { content: '\e803'; } /* '' */
-.icon-mic:before { content: '\e804'; } /* '' */
-.icon-clear:before { content: '\e805'; } /* '' */
-.icon-sign-in:before { content: '\e806'; } /* '' */
-.icon-italic:before { content: '\e807'; } /* '' */
-.icon-bold:before { content: '\e808'; } /* '' */
-.icon-text:before { content: '\e809'; } /* '' */
-.icon-heart:before { content: '\e80a'; } /* '' */
-.icon-quote-left:before { content: '\e80b'; } /* '' */
-.icon-wrench:before { content: '\e80c'; } /* '' */
-.icon-users:before { content: '\e80d'; } /* '' */
-.icon-settings:before { content: '\e80e'; } /* '' */
-.icon-login:before { content: '\e80f'; } /* '' */
-.icon-mute:before { content: '\e810'; } /* '' */
-.icon-cancel:before { content: '\e811'; } /* '' */
-.icon-user-secret:before { content: '\e812'; } /* '' */
-.icon-man:before { content: '\e813'; } /* '' */
-.icon-woman:before { content: '\e814'; } /* '' */
-.icon-skull:before { content: '\e815'; } /* '' */
-.icon-register:before { content: '\e816'; } /* '' */
-.icon-boy:before { content: '\e817'; } /* '' */
-.icon-girl:before { content: '\e818'; } /* '' */
-.icon-add:before { content: '\e819'; } /* '' */
-.icon-remove:before { content: '\e81a'; } /* '' */
-.icon-sign-out:before { content: '\e81b'; } /* '' */
-.icon-home:before { content: '\e81c'; } /* '' */
-.icon-search:before { content: '\e81d'; } /* '' */
-.icon-volume-off:before { content: '\e81e'; } /* '' */
-.icon-volume-1:before { content: '\e81f'; } /* '' */
-.icon-volume-2:before { content: '\e820'; } /* '' */
-.icon-volume-3:before { content: '\e821'; } /* '' */
-.icon-mail:before { content: '\e822'; } /* '' */
-.icon-pencil:before { content: '\e823'; } /* '' */
-.icon-cog:before { content: '\e824'; } /* '' */
-.icon-smile:before { content: '\e825'; } /* '' */
-.icon-chart-area:before { content: '\e838'; } /* '' */
-.icon-chart-pie:before { content: '\e839'; } /* '' */
-.icon-chart-line:before { content: '\e83a'; } /* '' */
-.icon-santa-hat:before { content: '\e83b'; } /* '' */
-.icon-snow-heavy-inv-1:before { content: '\e83c'; } /* '' */
-.icon-videocam:before { content: '\e83e'; } /* '' */
-.icon-phone-circled:before { content: '\e840'; } /* '' */
+.icon-snow-heavy-inv-1:before { content: '\e800'; } /* '' */
+.icon-cog:before { content: '\e801'; } /* '' */
+.icon-pencil:before { content: '\e802'; } /* '' */
+.icon-mail:before { content: '\e803'; } /* '' */
+.icon-volume-3:before { content: '\e804'; } /* '' */
+.icon-volume-2:before { content: '\e805'; } /* '' */
+.icon-volume-1:before { content: '\e806'; } /* '' */
+.icon-volume-off:before { content: '\e807'; } /* '' */
+.icon-search:before { content: '\e808'; } /* '' */
+.icon-home:before { content: '\e809'; } /* '' */
+.icon-sign-out:before { content: '\e80a'; } /* '' */
+.icon-remove:before { content: '\e80b'; } /* '' */
+.icon-add:before { content: '\e80c'; } /* '' */
+.icon-girl:before { content: '\e80d'; } /* '' */
+.icon-boy:before { content: '\e80e'; } /* '' */
+.icon-register:before { content: '\e80f'; } /* '' */
+.icon-skull:before { content: '\e810'; } /* '' */
+.icon-woman:before { content: '\e811'; } /* '' */
+.icon-man:before { content: '\e812'; } /* '' */
+.icon-user-secret:before { content: '\e813'; } /* '' */
+.icon-login:before { content: '\e814'; } /* '' */
+.icon-mute:before { content: '\e815'; } /* '' */
+.icon-cancel:before { content: '\e816'; } /* '' */
+.icon-settings:before { content: '\e817'; } /* '' */
+.icon-users:before { content: '\e818'; } /* '' */
+.icon-wrench:before { content: '\e819'; } /* '' */
+.icon-quote-left:before { content: '\e81a'; } /* '' */
+.icon-heart:before { content: '\e81b'; } /* '' */
+.icon-text:before { content: '\e81c'; } /* '' */
+.icon-bold:before { content: '\e81d'; } /* '' */
+.icon-italic:before { content: '\e81e'; } /* '' */
+.icon-sign-in:before { content: '\e81f'; } /* '' */
+.icon-clear:before { content: '\e820'; } /* '' */
+.icon-anonymous:before { content: '\e821'; } /* '' */
+.icon-santa-hat:before { content: '\e822'; } /* '' */
+.icon-videocam:before { content: '\e823'; } /* '' */
+.icon-phone:before { content: '\e824'; } /* '' */
+.icon-mic:before { content: '\e825'; } /* '' */
+.icon-chart-bar:before { content: '\e826'; } /* '' */
+.icon-chart-area:before { content: '\e827'; } /* '' */
+.icon-chart-pie:before { content: '\e828'; } /* '' */
+.icon-chart-line:before { content: '\e829'; } /* '' */
+.icon-smile:before { content: '\e82a'; } /* '' */
+.icon-snow-heavy-inv:before { content: '\e82b'; } /* '' */
+.icon-phone-circled:before { content: '\e82c'; } /* '' */
+.icon-hang-up:before { content: '\e82d'; } /* '' */
+.icon-no-videocam:before { content: '\e82e'; } /* '' */
+.icon-call-aswer:before { content: '\e82f'; } /* '' */
