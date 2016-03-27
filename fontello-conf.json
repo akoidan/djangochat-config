@@ -599,6 +599,30 @@
       ]
     },
     {
+      "uid": "8b80d36d4ef43889db10bc1f0dc9a862",
+      "css": "user",
+      "code": 59440,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "8beac4a5fd5bed9f82ca7a96cc8ba218",
+      "css": "key",
+      "code": 59441,
+      "src": "entypo"
+    },
+    {
+      "uid": "95c84da411a955a12baff8b0859c9276",
+      "css": "lock",
+      "code": 59442,
+      "src": "websymbols"
+    },
+    {
+      "uid": "d1a7ajpi3149rk5q4861jw9f2lzg27d1",
+      "css": "user-pair",
+      "code": 59443,
+      "src": "modernpics"
+    },
+    {
       "uid": "bed30888834736f7803dbd9116f736dc",
       "css": "mic",
       "code": 59396,
