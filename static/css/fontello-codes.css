@@ -47,3 +47,7 @@
 .icon-hang-up:before { content: '\e82d'; } /* '' */
 .icon-no-videocam:before { content: '\e82e'; } /* '' */
 .icon-call-aswer:before { content: '\e82f'; } /* '' */
+.icon-user:before { content: '\e830'; } /* '' */
+.icon-key:before { content: '\e831'; } /* '' */
+.icon-lock:before { content: '\e832'; } /* '' */
+.icon-user-pair:before { content: '\e833'; } /* '' */
