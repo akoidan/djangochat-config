@@ -6,7 +6,7 @@ function printJson() {
   files=($(ls $pattern))
   for i in "${files[@]}"
   do
-	 gif_file_name=$(echo "${i:0:-4}" | tail -c 5)
+     gif_file_name=$(echo "${i:0:-4}" | tail -c 5)
    base=$(cat "$i" |base64 -w 0)
    echo "  \"$gif_file_name\" : \"$base\"," >>  $filename
   done
