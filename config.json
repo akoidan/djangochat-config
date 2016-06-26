@@ -667,6 +667,18 @@
       "css": "picture",
       "code": 59448,
       "src": "fontawesome"
+    },
+    {
+      "uid": "1bafeeb1808a5fe24484c7890096901a",
+      "css": "user-plus",
+      "code": 59449,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "517522647a556192fbc78aa391b7b0c2",
+      "css": "cancel-circled-outline",
+      "code": 59450,
+      "src": "typicons"
     }
   ]
 }
