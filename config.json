@@ -679,6 +679,18 @@
       "css": "cancel-circled-outline",
       "code": 59450,
       "src": "typicons"
+    },
+    {
+      "uid": "c35e0796f6f806945a44b1655ce7bbe7",
+      "css": "angle-circled-down",
+      "code": 59451,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "8cbd5bcfb00043b8094fd7ac21ae5e06",
+      "css": "angle-circled-up",
+      "code": 59452,
+      "src": "fontawesome"
     }
   ]
 }
