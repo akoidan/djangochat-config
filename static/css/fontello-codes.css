@@ -60,4 +60,9 @@
 .icon-cancel-circled-outline:before { content: '\e83a'; } /* '' */
 .icon-angle-circled-down:before { content: '\e83b'; } /* '' */
 .icon-angle-circled-up:before { content: '\e83c'; } /* '' */
+.icon-brush-1:before { content: '\e83d'; } /* '' */
+.icon-trash-circled:before { content: '\e83e'; } /* '' */
+.icon-send:before { content: '\e83f'; } /* '' */
+.icon-eraser:before { content: '\f12d'; } /* '' */
 .icon-doc-inv:before { content: '\f15b'; } /* '' */
+.icon-brush:before { content: '\f1fc'; } /* '' */

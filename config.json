@@ -697,6 +697,36 @@
       "css": "doc-inv",
       "code": 61787,
       "src": "fontawesome"
+    },
+    {
+      "uid": "fa9a0b7e788c2d78e24cef1de6b70e80",
+      "css": "brush",
+      "code": 61948,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "972c9374fbfca1e9095da9f104181be9",
+      "css": "trash-circled",
+      "code": 59454,
+      "src": "elusive"
+    },
+    {
+      "uid": "b3a9e2dab4d19ea3b2f628242c926bfe",
+      "css": "brush-1",
+      "code": 59453,
+      "src": "iconic"
+    },
+    {
+      "uid": "ebc57fa8400e4ede049ac5dc665210e1",
+      "css": "eraser",
+      "code": 61741,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "3a00327e61b997b58518bd43ed83c3df",
+      "css": "send",
+      "code": 59455,
+      "src": "fontawesome"
     }
   ]
 }
