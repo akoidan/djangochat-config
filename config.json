@@ -727,6 +727,12 @@
       "css": "send",
       "code": 59455,
       "src": "fontawesome"
+    },
+    {
+      "uid": "14e9aa28bf2a3531274f85194e733b71",
+      "css": "color-adjust",
+      "code": 61472,
+      "src": "mfglabs"
     }
   ]
 }
