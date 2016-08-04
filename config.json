@@ -733,6 +733,12 @@
       "css": "color-adjust",
       "code": 61472,
       "src": "mfglabs"
+    },
+    {
+      "uid": "4743b088aa95d6f3b6b990e770d3b647",
+      "css": "facebook-squared",
+      "code": 62216,
+      "src": "fontawesome"
     }
   ]
 }
