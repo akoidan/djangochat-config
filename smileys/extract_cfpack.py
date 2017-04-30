@@ -80,7 +80,7 @@ def create_sass_file(info, sass_out_path):
 	with open(info_file_name, 'w', encoding='utf-8') as f:
 		f.write('''@import "./mixins"\n''')
 		for key in info:
-			f.write('''@include smile("{}", "{}")'''.format(key, info[key]))
+			f.write('''@include smile("{}", "{}")\n'''.format(key, info[key]))
 
 
 if __name__ == '__main__':
