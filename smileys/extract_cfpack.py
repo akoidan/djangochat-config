@@ -1,6 +1,6 @@
 import json
 import re
-
+import json
 __author__ = 'bomzhe'
 # cfpack stealer cfpack_st101.zip
 # http://alexforum.ws/showthread.php?t=3911&page=3
@@ -8,6 +8,7 @@ import struct
 import os
 import sys
 from time import strftime
+import base64
 
 ext = {
 	b'\x47\x49': 'gif',
@@ -24,13 +25,12 @@ file_names_pattern = {
 smiley_pattern = re.compile(r'^:.*:$')
 
 
-def extract_file():
+def extract_file(pack_path, gif_dir_path):
 	with open(pack_path, 'rb') as f:
 		addition_info, cats = {}, []
 		smileys = {}
-
-		if not os.path.exists(gif_dir_path):
-			os.mkdir(gif_dir_path)
+		start_char = 13313
+		b64_data = {}
 		print(strftime('[%H:%M:%S] Please wait.'))
 		size = struct.unpack('<H', f.read(2))  # header size (useless)
 		addition_info['width'], addition_info['height'], count = struct.unpack('<HHB', f.read(5))
@@ -38,8 +38,9 @@ def extract_file():
 			size = ord(f.read(1)) * 2  # 2 байта на символ utf16
 			cats.append((f.read(size)).decode('utf-16le'))  # запоминаем категории
 			addition_info[cats[c]] = []
-			if not os.path.exists(gif_dir_path + os.sep + cats[c]):
-				os.mkdir(gif_dir_path + os.sep + file_names_pattern[cats[c]])
+			cat_path = os.sep.join((gif_dir_path, file_names_pattern[cats[c]]))
+			if not os.path.exists(cat_path):
+				os.mkdir(cat_path)
 		addition_info['count'] = struct.unpack('<H', f.read(2))[0]  # число смайлов в паке
 		for item in range(addition_info['count']):
 			f.seek(1, 1)  # размер заголовка пропускаем
@@ -58,26 +59,38 @@ def extract_file():
 			smileys.setdefault(tab, {})
 			if not smiley_pattern.match(alias):
 				alias = ":%s:" % alias
-			smileys[tab][alias] = file_name
+			start_char += 1
+			smileys[tab][chr(start_char)] = alias
+			b64_data[alias] = base64.b64encode(data).decode('utf8')
 			with open(gif_file_path, 'wb') as gif:
 				gif.write(data)
-	return smileys
+	return smileys, b64_data
 
 
-def create_json_info(info):
+
+def create_json_info(info, gif_dir_path):
+	if not os.path.exists(gif_dir_path):
+		os.mkdir(gif_dir_path)
 	info_file_name = os.sep.join((gif_dir_path, 'info.json'))
 	with open(info_file_name, 'w', encoding='utf-8') as f:
 		f.write(json.dumps(info))
 
+def create_sass_file(info, sass_out_path):
+	info_file_name = os.sep.join((sass_out_path, '_smileys.sass'))
+	with open(info_file_name, 'w', encoding='utf-8') as f:
+		f.write('''@import "./mixins"\n''')
+		for key in info:
+			f.write('''@include smile("{}", "{}")'''.format(key, info[key]))
+
 
 if __name__ == '__main__':
 	print('\nCFPack Stealer 1.01\n')
-	if len (sys.argv) < 1:
-		raise Exception("pass DefaultSmilies.cfpack path")
-	pack_path = sys.argv[1]
-	gif_dir_path = os.sep.join((os.path.dirname(sys.argv[0]), "static", "smileys"))
+	pack_path = os.sep.join((os.path.dirname(os.path.realpath(__file__)), "DefaultSmilies.cfpack"))
+	gif_dir_path = os.sep.join((os.path.dirname(os.path.dirname(__file__)), "smileys"))
+	sass_out_path = os.sep.join((os.path.dirname(os.path.dirname(__file__)), "static", "sass", "partials"))
 	if not os.path.exists(pack_path):
 		raise FileNotFoundError("cfpack file <<%s>> doesn't exist" % pack_path)
-	info = extract_file()
-	create_json_info(info)
+	info, b64 = extract_file(pack_path, gif_dir_path)
+	create_json_info(info, gif_dir_path)
+	create_sass_file(b64, sass_out_path)
 	print(strftime('[%H:%M:%S] Done.'))
