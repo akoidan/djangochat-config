@@ -17,6 +17,10 @@ ext = {
 	b'\x42\x4d': 'bmp'
 }
 
+
+def unpack_gif(head):
+	return struct.unpack('<HH', head[6:10])
+
 file_names_pattern = {
 	"I" : "base",
 	"II" : "girls",
@@ -53,6 +57,9 @@ def extract_file(pack_path, gif_dir_path):
 			size = struct.unpack('<I', f.read(4))[0]
 			data = f.read(size)
 			file_ext = ext.get(data[:2], '')
+			width, height = None, None
+			if file_ext == 'gif':
+				width, height = struct.unpack('<HH', data[6:10])
 			file_name = '{0:04x}.{1}'.format(item, file_ext)
 			tab = file_names_pattern[cats[cat_cur]]
 			gif_file_path = os.sep.join((gif_dir_path, tab, file_name))
@@ -61,7 +68,11 @@ def extract_file(pack_path, gif_dir_path):
 				alias = ":%s:" % alias
 			start_char += 1
 			smileys[tab][chr(start_char)] = alias
-			b64_data[alias] = base64.b64encode(data).decode('utf8')
+			b64_data[alias] = {
+				"base64" : base64.b64encode(data).decode('utf8'),
+				"width": width,
+				"height": height
+			}
 			with open(gif_file_path, 'wb') as gif:
 				gif.write(data)
 	return smileys, b64_data
@@ -80,7 +91,7 @@ def create_sass_file(info, sass_out_path):
 	with open(info_file_name, 'w', encoding='utf-8') as f:
 		f.write('''@import "./mixins"\n''')
 		for key in info:
-			f.write('''@include smile("{}", "{}")\n'''.format(key, info[key]))
+			f.write('''@include smile("{}", "{}", {}px, {}px)\n'''.format(key, info[key]["base64"], info[key]["width"], info[key]["height"]))
 
 
 if __name__ == '__main__':
