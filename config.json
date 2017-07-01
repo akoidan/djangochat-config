@@ -739,6 +739,12 @@
       "css": "facebook-squared",
       "code": 62216,
       "src": "fontawesome"
+    },
+    {
+      "uid": "c9d395b295ad7d9c28298dcea916c6df",
+      "css": "popup",
+      "code": 59456,
+      "src": "websymbols"
     }
   ]
 }
