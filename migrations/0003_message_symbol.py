@@ -8,7 +8,6 @@ from django.db import migrations, models
 class Migration(migrations.Migration):
 
     dependencies = [
-        migrations.RunSQL('update chat_message set symbol = (select max(symbol) from chat_image where message_id = chat_message.id)'),
         ('chat', '0002_message_multiple_images_20170701_1637'),
     ]
 
@@ -18,4 +17,6 @@ class Migration(migrations.Migration):
             name='symbol',
             field=models.CharField(max_length=1, null=True),
         ),
+        migrations.RunSQL(
+            'update chat_message set symbol = (select max(symbol) from chat_image where message_id = chat_message.id)'),
     ]
