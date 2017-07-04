@@ -65,6 +65,7 @@
 .icon-send:before { content: '\e83f'; } /* '' */
 .icon-popup:before { content: '\e840'; } /* '' */
 .icon-color-adjust:before { content: '\f020'; } /* '' */
+.icon-move:before { content: '\f047'; } /* '' */
 .icon-eraser:before { content: '\f12d'; } /* '' */
 .icon-doc-inv:before { content: '\f15b'; } /* '' */
 .icon-brush:before { content: '\f1fc'; } /* '' */
