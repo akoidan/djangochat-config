@@ -839,6 +839,18 @@
       "src": "fontawesome"
     },
     {
+      "uid": "f9c3205df26e7778abac86183aefdc99",
+      "css": "undo",
+      "code": 59447,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "bc71f4c6e53394d5ba46b063040014f1",
+      "css": "redo",
+      "code": 59460,
+      "src": "fontawesome"
+    },
+    {
       "uid": "918bda80304f8b29c37dbd7322fef131",
       "css": "webrtc-nomic",
       "code": 59447,
