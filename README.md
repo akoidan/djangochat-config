@@ -18,4 +18,4 @@ static files for https://github.com/Deathangel908/djangochat
         input[type=file]::-webkit-file-upload-button {
           background:red;
         }
-      this selector won't work even for button in firefox
+     this selector won't work even for button in firefox
