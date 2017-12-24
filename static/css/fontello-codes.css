@@ -78,6 +78,7 @@
 .icon-paste:before { content: '\f0ea'; } /* '' */
 .icon-ellipse:before { content: '\f104'; } /* '' */
 .icon-line:before { content: '\f105'; } /* '' */
+.icon-desktop:before { content: '\f108'; } /* '' */
 .icon-rect:before { content: '\f10b'; } /* '' */
 .icon-rotate:before { content: '\f10d'; } /* '' */
 .icon-text:before { content: '\f10f'; } /* '' */

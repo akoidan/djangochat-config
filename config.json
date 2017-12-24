@@ -913,6 +913,12 @@
       ]
     },
     {
+      "uid": "757afacc32d82967975cbb3b45cfb41b",
+      "css": "desktop",
+      "code": 61704,
+      "src": "fontawesome"
+    },
+    {
       "uid": "918bda80304f8b29c37dbd7322fef131",
       "css": "webrtc-nomic",
       "code": 59447,
