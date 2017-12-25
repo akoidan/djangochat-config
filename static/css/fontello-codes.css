@@ -72,7 +72,8 @@
 .icon-paint-bucket:before { content: '\e846'; } /* '' */
 .icon-selection:before { content: '\e847'; } /* '' */
 .icon-github:before { content: '\e848'; } /* '' */
-.icon-random-selection:before { content: '\e849'; } /* '' */
+.icon-webrtc-nomic:before { content: '\e849'; } /* '' */
+.icon-random-selection:before { content: '\e84a'; } /* '' */
 .icon-color-adjust:before { content: '\f020'; } /* '' */
 .icon-move:before { content: '\f047'; } /* '' */
 .icon-paste:before { content: '\f0ea'; } /* '' */
