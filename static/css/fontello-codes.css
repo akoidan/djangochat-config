@@ -54,7 +54,7 @@
 .icon-plus-squared:before { content: '\e834'; } /* '' */
 .icon-webrtc-mic:before { content: '\e835'; } /* '' */
 .icon-plus:before { content: '\e836'; } /* '' */
-.icon-undo:before { content: '\e837'; } /* '' */
+.icon-webrtc-nomic:before { content: '\e837'; } /* '' */
 .icon-picture:before { content: '\e838'; } /* '' */
 .icon-user-plus:before { content: '\e839'; } /* '' */
 .icon-cancel-circled-outline:before { content: '\e83a'; } /* '' */
@@ -72,8 +72,9 @@
 .icon-paint-bucket:before { content: '\e846'; } /* '' */
 .icon-selection:before { content: '\e847'; } /* '' */
 .icon-github:before { content: '\e848'; } /* '' */
-.icon-webrtc-nomic:before { content: '\e849'; } /* '' */
+.icon-undo:before { content: '\e849'; } /* '' */
 .icon-random-selection:before { content: '\e84a'; } /* '' */
+.icon-no-desktop:before { content: '\e84b'; } /* '' */
 .icon-color-adjust:before { content: '\f020'; } /* '' */
 .icon-move:before { content: '\f047'; } /* '' */
 .icon-paste:before { content: '\f0ea'; } /* '' */
